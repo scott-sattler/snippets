@@ -31,11 +31,6 @@ def recursive_dimension_finder(given_object: list, list_dimensions: Optional[lis
 
 my_dict = {'a': '1', 'b': '2', 'c': '3', 'd': '4'}
 dict_to_list = [list(my_dict.items())[y][x] for x in [0, 1] for y in range(len(my_dict))]
-# print(list(my_dict.items()))
-
-print([[0, 1] for y in range(len(my_dict))])
-
-[[0, 1] for y in range(0, 4)] # noqa
 
 
 
