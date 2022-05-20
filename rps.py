@@ -7,11 +7,3 @@ capitalize() in rps else evl_inp_cho(input(pro)))('-e')).lower() else ([f"Win: {
 1)][0] if ({k: ['s', 'k', 'r'][i] for i, k in enumerate([i[-1] for i in rps])})[usr[-1]] == cho[-1] else [f"Lose: \
 {usr.capitalize()} vs {cho}", scr.append(0)][0])) for i in evl_inp_gme('foobar')], print(f'Game Over: {sum(scr)} wins \
 in {len(scr)} games.')]  # noqa
-
-
-
-
-
-
-# basic 1 line rock paper scissors game
-from random import choice; [[input('Choose Rock Paper or Scissors: '), print(choice(["win", "lose", "tie"]))] for i in range(int(input('How many games to play? ')))] # noqa
