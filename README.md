@@ -1,3 +1,3 @@
 # snippets
 
-pieces of code i find interesting
+pieces of code i found interesting at some point
