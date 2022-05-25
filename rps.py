@@ -1,4 +1,4 @@
-# code on GitHub under rps snippets
+# code on GitHub at ./snippets/rps.py
 from random import choice; one_line_rps_with_memory_and_input_check_ver_02 = \
 [scr := [], evl_inp_gme := lambda usr_inp: range(int(usr_inp)) if usr_inp.isdigit() else evl_inp_gme(input("Number of g\
 ames to play? ")), [print([f"Tie: {usr.capitalize()} vs {cho}", scr.append(0)][0] if (cho := choice(rps := (pro := "Cho\
