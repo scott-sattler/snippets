@@ -23,7 +23,7 @@ def dict_test(iterator):
     my_dict = dict()
     for i in iterator:
         if i not in my_dict:
-            my_dict.update({i: None})
+            my_dict.update({i: ""})
 
 
 def set_test(iterator):
@@ -44,7 +44,7 @@ start_time = Stopwatch()
 dict_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"dict:\t {str(end_time)}")
+run_list.append(f"dic: {str(end_time)}")
 ############################################
 
 ############################################
@@ -53,7 +53,7 @@ start_time = Stopwatch()
 set_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"set:\t {str(end_time)}")
+run_list.append(f"set: {str(end_time)}")
 ############################################
 
 ############################################
@@ -62,7 +62,7 @@ start_time = Stopwatch()
 dict_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"dict:\t {str(end_time)}")
+run_list.append(f"dic: {str(end_time)}")
 ############################################
 
 ############################################
@@ -71,7 +71,7 @@ start_time = Stopwatch()
 set_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"set:\t {str(end_time)}")
+run_list.append(f"set: {str(end_time)}")
 ############################################
 
 ############################################
@@ -80,7 +80,7 @@ start_time = Stopwatch()
 dict_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"dict:\t {str(end_time)}")
+run_list.append(f"dic: {str(end_time)}")
 ############################################
 
 ############################################
@@ -89,7 +89,33 @@ start_time = Stopwatch()
 set_test(iterator)
 
 end_time = start_time.elapsed_time()
-run_list.append(f"set:\t {str(end_time)}")
+run_list.append(f"set: {str(end_time)}")
 ############################################
+
+
+
+
+# ############################################
+# start_time = Stopwatch()
+#
+# for i in range(100_000_000):
+#     foo = None
+#
+# end_time = start_time.elapsed_time()
+# run_list.append(f"None: {str(end_time)}")
+# ############################################
+#
+# ############################################
+# start_time = Stopwatch()
+#
+# for i in range(100_000_000):
+#     foo = ""
+#
+# end_time = start_time.elapsed_time()
+# run_list.append(f'"": {str(end_time)}')
+# ############################################
+
+
+
 
 print(str(run_list))
