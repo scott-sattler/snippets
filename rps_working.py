@@ -7,7 +7,7 @@
 # display((3,7)), 0][1]) for i in get_inp()]], print(f'Game Over: {sum(games[2])} wins in {len(games[2])} games.')] # noqa
 
 
-# code on GitHub at ./snippets/rps.py
+# more clarity on GitHub at ./snippets/rps_working.py; code itself at ./snippets/rps_v3.py
 from random import choice; one_line_rps_nightmare_with_memory_and_input_check_v03 = [
     games := [
         get_inp := lambda usr_inp='foobar': range(int(usr_inp)) if usr_inp.isdigit() else get_inp(input("Number of games to play? ")),
@@ -23,5 +23,6 @@ from random import choice; one_line_rps_nightmare_with_memory_and_input_check_v0
             for i in get_inp()]],
     print(f'Game Over: {sum(games[2])} wins in {len(games[2])} games.')
 ]  # noqa
+
 print(one_line_rps_nightmare_with_memory_and_input_check_v03)
 print(games)
