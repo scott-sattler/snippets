@@ -1,4 +1,4 @@
-# code on GitHub at ./snippets/rps.py
+# more clarity on GitHub at ./snippets/rps_working.py and code at ./snippets/rps.py
 from random import choice; one_line_rps_nightmare_with_memory_and_input_check_v03 = [games := [get_inp := lambda usr_inp
 ='foobar': range(int(usr_inp)) if usr_inp.isdigit() else get_inp(input("Number of games to play? ")), display := lambda
 xy: print(f"{'WinLossTie'[xy[0]:xy[1]]}: {usr_inp.capitalize()} vs {get_cpu}"), [[display((7,256)), 0][1] if (get_cpu :=
