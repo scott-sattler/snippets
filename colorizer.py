@@ -35,4 +35,5 @@ if __name__ == '__main__':
     # print(ctxt('PASSED ARGS'))
 
 
-    print(ctxt('COLORS', S(S.RED, S.BLACK).c))
+    # print(ctxt('COLORS', S(S.RED, S.BLACK).c))
+    cprint('COLORS', S(S.RED, S.BLACK).c)
