@@ -17,7 +17,7 @@ class S:
 
     @property
     def c(self):
-        return f'00;3{self.bg};4{self.fg}'
+        return f'00;3{self.fg};4{self.bg}'
 
 
 if __name__ == '__main__':
