@@ -20,6 +20,9 @@ class S:
     def c(self):
         return f'00;3{self.fg};4{self.bg}'
 
+    def t(self, txt):
+        return f'\x1b[{self.c}m' + str(txt) + '\x1b[0m'
+
 
 if __name__ == '__main__':
     # for i in range(9):
@@ -35,9 +38,9 @@ if __name__ == '__main__':
     cprint = lambda txt='', code='', sep=' ', end='\n': print(f'\x1b[{code}m' + str(txt) + '\x1b[0m', sep=sep, end=end)  # noqa
     # print(ctxt('PASSED ARGS'))
 
-
     # print(ctxt('COLORS', S(S.RED, S.BLACK).c))
     # cprint('COLORS', S(S.RED, S.BLACK).c)
 
     # todo: arbitrary number of text arguments
     cprint('FOOD', S(background=S.BLACK).c)
+    print(S(S.RED).t('TAKING SCREENSHOTS IS NOT ENABLED'))
